@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact/Hire Me</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            
+        }
+        form {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background:#202020;
+            padding: 20px;
+            border: 50px solid #202020;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+           width: 50%;
+           color: white;
+           background: transparent;
+        }
+        textarea{
+            min-height: 30px;
+            max-height: 100px;
+        }
+        button {
+            background: #ff6b00;
+            color: white;
+            cursor: pointer;
+            border: none;
+            width: 20%;
+            
+        }
+        button:hover {
+            background: #cb4a17;
+        }
+        #heading{
+            color: #ffa600;
+            font-size: 2rem;
+            border-radius: 5px;
+            background: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action=""><h1 id="heading">Contact / Hire Me</h1>
+        <input type="text" placeholder="Enter your name here" required>
+        <input type="email" placeholder="Enter your email here" required>
+        <textarea required cols="30" rows="10" placeholder="Enter your message here"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

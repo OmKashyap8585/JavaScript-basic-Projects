@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop File Uploader</title>
+    <style>
+        body {
+            margin: 20px;
+            text-align: center;
+        }
+        #dropZone {
+            width: 100%;
+            max-width: 500px;
+            height: 200px;
+            border: 2px dashed #007BFF;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #007BFF;
+            cursor: pointer;
+            background-color: #f9f9f9;
+        }
+        #dropZone.dragover {
+            background-color: #eaf5ff;
+        }
+        #fileList {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .file-item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px 0;
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drag and Drop File Uploader</h1>
+    <div id="dropZone">Drag and drop files here or click to browse</div>
+    <input type="file" id="fileInput" hidden multiple>
+    <div id="fileList"></div>
+    <script src="script.js"></script>
+</body>
+</html>

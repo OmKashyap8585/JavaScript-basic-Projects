@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b00;
+}
+
+.sections {
+    /* width: 30%; */
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.sections li:hover{
+    color: #ff6b00;
+    cursor: pointer;
+}
+.hire-contact-me {
+    background: #ff6b00;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: fit-content;
+}
+
+
+/* Portfolio Section */
+.porfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+}
+
+.portfolio-content {
+    max-width: 50%;
+}
+.portfolio-content .hire-contact-me{
+    font-size: large;
+    margin-top: 20px;
+    max-width: max-content;
+}
+.portfolio-img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.myImg{
+    border-radius: 50%;
+    overflow: hidden;
+}
+#sw-er{
+    color: #ff6b00;
+
+}
+#sw-er:hover{
+    color: #ffffff;
+    
+}
+#hi {
+    font-size: 20px;
+    color: #ff6b00;
+}
+
+#name {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.portfolio-img img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    background: #121212;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #333;
+}
+footer div{
+    margin: 10px;
+}
+#github,#ig{
+    background: #fff;
+    border-radius: 50%;
+}
+.social{
+    width: 110px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+@keyframes blink {
+    40% {
+      opacity: 0;
+    }
+  }
+.cv a{
+    color: #ff6b00;
+    font-weight: bold;
+    text-decoration: none;
+    animation: blink 1s infinite;
+
+}
+
+.download-btn:hover {
+    color: #0f8adc;
+}
+#right{
+    font-size: 0.6rem;
+    margin-right: 20px;
+}
+
+/* Style for the blurred background */
+.blur {
+  filter: blur(5px);
+}
+
+/* Style for the modal container */
+#popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Overlay to prevent interaction with blurred background */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+#closeButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: xx-large;
+    padding: 3px;
+    width: 3rem;
+    border-radius: 4px;
+    background: #202020;
+    border: none;
+    color: white;
+    border-radius: 50%;
+}
+#closeButton:hover{
+    background: rgb(248, 53, 53)
+}
+
